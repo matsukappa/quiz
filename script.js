@@ -90,8 +90,19 @@ nextBtn.addEventListener("click", function () {
             <h1>終了！</h1>
             <h1>3問中 ${score}問正解</h1>
             <p>お疲れさまでした！</p>
+            
+            <button id="restartBtn">
+                もう一度挑戦
+            </button>
         `;
-    }
+
+        document.getElementById("restartBtn").addEventListener("click", function () {
+            currentQuestion = 0;
+            score = 0;
+            location.reload();
+        });
+    }    
+    
 });
 
 showQuestions();
