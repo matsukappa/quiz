@@ -1,0 +1,97 @@
+const questions = [
+    {
+        quest: "apple",
+        correct: "りんご",
+        choices: ["りんご", "犬", "猫", "本"]
+    },
+    {
+        quest: "dog",
+        correct: "犬",
+        choices: ["犬", "車", "学校", "山"]
+    },
+    {
+        quest: "book",
+        correct: "本",
+        choices: ["本", "机", "先生", "海"]
+    }
+];
+
+let currentQuestion = 0;
+let score = 0;
+
+const wordElement = document.getElementById("quest");
+const choicesElement = document.getElementById("choices");
+const resultElement = document.getElementById("result");
+const nextBtn = document.getElementById("nextBtn");
+const questionCountElement = document.getElementById("question-count");
+
+function showQuestions() {
+
+    const q = questions[currentQuestion];
+
+    questionCountElement.textContent =
+        `${currentQuestion + 1} / ${questions.length}`;
+
+    wordElement.textContent = q.quest;
+
+    choicesElement.innerHTML = "";
+    resultElement.textContent = "";
+
+    const shuffledChoices = [...q.choices].sort(() => Math.random()-0.5)
+
+    shuffledChoices.forEach(choice => {
+        const button = document.createElement("button");
+
+        button.textContent = choice;
+        button.className = "choice-btn";
+
+        button.addEventListener("click", function () {
+            checkAnswer(choice);
+        });
+
+        choicesElement.appendChild(button);
+    });
+
+    nextBtn.style.display = "none";
+}
+
+function checkAnswer(choice) {
+
+    const q = questions[currentQuestion];
+
+    if (choice === q.correct) {
+        resultElement.textContent = "✅ 正解！";
+        resultElement.style.color = "green";
+        score++;
+    } else {
+        resultElement.textContent =
+            `❌ 不正解！正解は「${q.correct}」`;
+        resultElement.style.color = "red";
+    }
+
+    const buttons =
+        document.querySelectorAll(".choice-btn");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    nextBtn.style.display = "block";
+}
+
+nextBtn.addEventListener("click", function () {
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        showQuestions();
+    } else {
+        document.querySelector(".container").innerHTML = `
+            <h1>終了！</h1>
+            <h1>3問中 ${score}問正解</h1>
+            <p>お疲れさまでした！</p>
+        `;
+    }
+});
+
+showQuestions();
