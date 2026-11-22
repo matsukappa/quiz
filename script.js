@@ -15,7 +15,7 @@ const questions = [
         "choices": ["ResNet", "AlexNet", "ZFNet", "VGGNet"]
     }
 ];
-
+alert("script更新版");
 let currentQuestion = 0;
 let score = 0;
 
