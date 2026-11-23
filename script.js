@@ -1,27 +1,27 @@
-const questions = [
-    {
-        "quest": "人工知能は有限の処理能力しかないため、現実に起こりうる問題すべてに対処することができない (　) がある",
-        "correct": "フレーム問題",
-        "choices": ["フレーム問題", "ブラックボックス問題", "シンボルグラウンディング問題", "最適化問題"]
-    },
-    {
-        "quest": "第2次AIブームで登場、知識を明示的な形で記述することの難しさがネックとなったものとは",
-        "correct": "エキスパートシステム",
-        "choices": ["エキスパートシステム", "ディープラーニング", "コグニティブコンピューティング", "機械学習"]
-    },
-    {
-        "quest": "画像中の物体認識の精度を競う国際コンテスト ILSVRCにて2015年にMicrosoft社が開発、高い認識率を示したスキップ結合を特徴とするモデルとは",
-        "correct": "ResNet",
-        "choices": ["ResNet", "AlexNet", "ZFNet", "VGGNet"]
-    }
-];
+
+let questions = [];
+async function loadQuestions() {
+  const response = await fetch("questions.json");
+  const allQuestions = await response.json();
+
+  //カテゴリを取得
+  const selectedCategory = localStorage.getItem("category");
+  //カテゴリ絞り込み
+  questions = allQuestions.filter(
+    q => q.category === selectedCategory
+  );
+
+  showQuestions();
+}
 
 let currentQuestion = 0;
 let score = 0;
 
+const selectedCategory = localStorage.getItem("category");
 const wordElement = document.getElementById("quest");
 const choicesElement = document.getElementById("choices");
 const resultElement = document.getElementById("result");
+const explanationElement = document.getElementById("explanation");
 const nextBtn = document.getElementById("nextBtn");
 const questionCountElement = document.getElementById("question-count");
 
@@ -60,14 +60,16 @@ function checkAnswer(choice) {
     const q = questions[currentQuestion];
 
     if (choice === q.correct) {
-        resultElement.textContent = "✅ 正解！";
+        resultElement.textContent = "⭕ 正解！";
         resultElement.style.color = "green";
         score++;
     } else {
         resultElement.textContent =
-            `❌ 不正解！正解は「${q.correct}」`;
+            `❌ 正解は「${q.correct}」`;
         resultElement.style.color = "red";
     }
+
+    explanationElement.textContent = `${q.explanation}`;
 
     const buttons =
         document.querySelectorAll(".choice-btn");
@@ -86,23 +88,29 @@ nextBtn.addEventListener("click", function () {
     if (currentQuestion < questions.length) {
         showQuestions();
     } else {
-        document.querySelector(".container").innerHTML = `
-            <h1>終了！</h1>
-            <h1>3問中 ${score}問正解</h1>
-            <p>お疲れさまでした！</p>
+        if (score === questions.length){
+            location.href = "scratch.html";
+        } else {
+            document.querySelector(".container").innerHTML = `
+                <div style="text-align: center;">
+                <h1>終了！</h1>
+                <h1>${questions.length}問中 ${score}問正解</h1>
+                <p>お疲れさまでした！</p>
             
-            <button id="restartBtn">
-                もう一度挑戦
-            </button>
-        `;
+                <button id="restartBtn">
+                    もう一度挑戦
+                </button>
+                </div>
+            `;
 
-        document.getElementById("restartBtn").addEventListener("click", function () {
-            currentQuestion = 0;
-            score = 0;
-            location.reload();
-        });
+            document.getElementById("restartBtn").addEventListener("click", function () {
+                currentQuestion = 0;
+                score = 0;
+                location.reload();
+            });
+        }
     }    
     
 });
 
-showQuestions();
+loadQuestions();

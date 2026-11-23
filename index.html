@@ -14,11 +14,19 @@
 </head>
 <body>
 
-<h1>G検定の基本用語クイズ</h1>
+<h1>基礎用語クイズ</h1>
 <div class="button-area">
-  <button onclick="location.href='quiz_g001.html'">
-    基礎用語001 
-  </button>
+  <button onclick="startQuiz('AIの歴史')">AIの歴史</button>
+  <button onclick="startQuiz('機械学習')">機械学習</button>
+  <button onclick="startQuiz('ディープラーニング')">ディープラーニング</button>
+  <button onclick="startQuiz('ALL')">全問題</button>
 </div>
+
+<script>
+function startQuiz(category) {
+    localStorage.setItem("category", category);
+    location.href = "quiz.html";
+}
+</script>
 </body>
 </html>

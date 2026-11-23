@@ -50,6 +50,11 @@ h1 {
     min-height: 30px;
 }
 
+#explanation {
+    font-size: 0.85em;
+    color: #333333;
+}
+
 #nextBtn {
     width: 100%;
     padding: 12px;
