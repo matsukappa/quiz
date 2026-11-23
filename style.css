@@ -14,7 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
+h1 {
     text-align: center;
 }
 
@@ -25,7 +25,12 @@ h2 {
 }
 
 #quest {
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.8;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
@@ -50,4 +55,9 @@ h2 {
     padding: 12px;
     font-size: 16px;
     display: none;
+}
+
+.button-area {
+    text-align: center;
+    margin-top: 20px;
 }
