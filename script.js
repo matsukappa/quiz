@@ -59,7 +59,7 @@ function showQuestions() {
 
         choicesElement.appendChild(button);
     });
-
+    explanationElement.textContent = ``;
     nextBtn.style.display = "none";
 }
 
