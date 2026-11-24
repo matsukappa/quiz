@@ -43,21 +43,33 @@ canvas{
 <body>
 <h2>全問正解🎉</h2>
 <div class="card">
-    <img src="scratch/ganba.png" width="370" height="246">
+    <img id="rewardImage" width="370" height="246">
     <canvas id="scratch" width="370" height="246"></canvas>
 </div>
 
 <script>
+const imageMap = {
+    "AIのブーム": "scratch/ai01.png",
+    "機械学習": "scratch/ai01.png",
+    "ディープラーニング": "scratch/ai01.png",
+    "生成AI": "scratch/ai01.png"
+};
 
 const canvas = document.getElementById("scratch");
 const ctx = canvas.getContext("2d");
+const category = localStorage.getItem("category");
+document.getElementById("rewardImage").src = imageMap[category];
+
+console.log(category);
+console.log(imageMap[category]);
+
 
 ctx.fillStyle = "silver";
 ctx.fillRect(0,0,canvas.width,canvas.height);
 
 ctx.fillStyle = "black";
 ctx.font = "24px sans-serif";
-ctx.fillText("削ってね",80,80);
+ctx.fillText("マウスや指でこすってね",80,80);
 
 let scratching = false;
 
