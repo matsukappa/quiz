@@ -31,7 +31,7 @@ function showQuestions() {
     const q = questions[currentQuestion];
 
     questionCountElement.textContent =
-        `${currentQuestion + 1} / ${questions.length}`;
+        `${selectedCategory}　[ ${currentQuestion + 1} / ${questions.length}]`;
 
     wordElement.textContent = q.quest;
 
