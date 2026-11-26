@@ -20,9 +20,9 @@ h1 {
 
 .button-area {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: column;
   gap: 8px;
-  max-width: 800px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
