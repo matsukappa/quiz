@@ -22,8 +22,12 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 200px;
+  max-width: 300px;
   margin: 0 auto;
+}
+.button-area button {
+    font-size: 18px;
+    padding: 12px 12px;
 }
 
 #question-count {
@@ -64,13 +68,23 @@ h1 {
 }
 
 #nextBtn {
-    width: 100%;
+    width: 80%;
     padding: 12px;
     font-size: 16px;
     display: none;
-}
 
-.button-area {
-    text-align: center;
-    margin-top: 20px;
+    margin: 0 auto;
+}
+.footerbutton-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+  max-width: 200px;
+
+  margin: 30px auto 0 auto;
+}
+.footerbutton button {
+    font-size: 12px;
+    padding: 12px 12px;
 }
