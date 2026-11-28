@@ -1,5 +1,6 @@
 [
     {
+        "categoryID": "aiboom",
         "category": "AIのブーム",
         "quest": "第1次AIブームは（　）年のダートマス会議で（　）が提唱されたことがきっかけと言われている",
         "correct": "1956, 人工知能",
@@ -7,6 +8,7 @@
         "explanation": "ジョン・マッカーシーらが「Artificial Intelligence（人工知能）」を公式の場で初めて使用しました"
     },
     {
+        "categoryID": "aiboom",
         "category": "AIのブーム",
         "quest": "第2次AIブームで特徴的だったものは？",
         "correct": "エキスパートシステム",
@@ -14,6 +16,7 @@
         "explanation": "特定の分野の専門家の知識をコンピュータに取り込んで、問題を解決しようとしました"
     },
     {
+        "categoryID": "aiboom",
         "category": "AIのブーム",
         "quest": "第3次AIブームでは、大量データを高速に計算できる（　）がよく使用される",
         "correct": "GPU",
@@ -21,6 +24,7 @@
         "explanation": "ディープラーニングをする際は、GPUはCPUよりも高速処理が可能です"
     },
     {
+        "categoryID": "aiboom",
         "category": "AIのブーム",
         "quest": "2022年（　）の公開により、生成AIが多くの人に広まった",
         "correct": "chatGPT",
@@ -28,6 +32,7 @@
         "explanation": "OpenAIが2022年にchatGPTを公開しました"
     },
     {
+        "categoryID": "aiboom",
         "category": "AIのブーム",
         "quest": "AIの歴史の流れとして正しいものは？",
         "correct": "探索・推論 → エキスパートシステム → ディープラーニング → 生成AI",
@@ -38,6 +43,7 @@
         "explanation": "探し、知識を持ち、深く学習し、生成できるようになった、と覚えよう"
     },
     {
+        "categoryID": "machinelearning",
         "category": "機械学習",
         "quest": "教師あり学習の説明として最も適切なものは？",
         "correct": "入力データと正解ラベルの組を用いて学習する方法",
@@ -48,6 +54,7 @@
         "explanation": "機械に学習させる前に、正解ラベルを用意する必要があります"
     },
     {
+        "categoryID": "machinelearning",
         "category": "機械学習",
         "quest": "次のうち、教師あり学習に分類されるものは？",
         "correct": "決定木",
@@ -55,6 +62,7 @@
         "explanation": "主成分分析、k-means法は教師なし学習、Q学習は強化学習です"
     },
     {
+        "categoryID": "machinelearning",
         "category": "機械学習",
         "quest": "ノーフリーランチ定理の説明としてふさわしいのは？",
         "correct": "すべての問題に対して万能なアルゴリズムは存在しない",
@@ -64,6 +72,7 @@
         "explanation": "「無料ランチはない（都合のいいものはない）」という英語のフレーズが元と言われています"
     },
     {
+        "categoryID": "machinelearning",
         "category": "機械学習",
         "quest": "次のうち、教師なし学習の例は？",
         "correct": "顧客の購買傾向によるグループ分け",
@@ -71,6 +80,7 @@
         "explanation": "対象を似た特徴で分類分けするのは教師なし学習の例です"
     },
     {
+        "categoryID": "neuralnetwork",
         "category": "ニューラルネットワーク",
         "quest": "ニューラルネットワークのよくある構造は？",
         "correct": "入力層、隠れ層、出力層",
@@ -78,6 +88,7 @@
         "explanation": "入力層でデータを受け取り、隠れ層で学習し、出力層で結果を出力します"
     },
     {
+        "categoryID": "neuralnetwork",
         "category": "ニューラルネットワーク",
         "quest": "ニューラルネットワークで活性化関数を使用する主な目的は？",
         "correct": "モデルに非線形性を持たせるため",
@@ -85,6 +96,7 @@
         "explanation": "活性化関数により、複雑な学習ができます"
     },
     {
+        "categoryID": "neuralnetwork",
         "category": "ニューラルネットワーク",
         "quest": "過学習とは？",
         "correct": "訓練データにはよく適合するが、未知のデータに対する性能が低下する状態",
@@ -93,6 +105,7 @@
         "explanation": "訓練データのノイズまで覚えてしまい、新しいデータにうまく対応できなくなる現象です"
     },
     {
+        "categoryID": "neuralnetwork",
         "category": "ニューラルネットワーク",
         "quest": "GPTなどの大規模言語モデルにファインチューニングを行う主な目的とは？",
         "correct": "特定分野の知識や回答傾向を学習させるため",
@@ -100,6 +113,7 @@
         "explanation": "特定のデータを追加学習させることで、その分野に強いモデルにできます"
     },
     {
+        "categoryID": "aiagent",
         "category": "AIエージェント",
         "quest": "AIエージェントの特徴とは？",
         "correct": "環境を観測し、目的達成に向けて自律的に判断して行動する",
@@ -109,6 +123,7 @@
         "explanation": "生成だけでなく、自発的に考えることが特徴です"
     },
     {
+        "categoryID": "aiagent",
         "category": "AIエージェント",
         "quest": "生成AIとAIエージェントとの関係は？",
         "correct": "AIエージェントは生成AIを利用して行動する",
@@ -117,6 +132,7 @@
         "explanation": "AIエージェントは生成AIを頭脳のように使いながら外部ツール実行や案作成をします"
     },
     {
+        "categoryID": "aiagent",
         "category": "AIエージェント",
         "quest": "AIエージェントが複数ステップの処理をする際に重要な機能とは？",
         "correct": "計画立案",
@@ -124,6 +140,7 @@
         "explanation": "大きな目標を小さな作業に分けます"
     },
     {
+        "categoryID": "aiagent",
         "category": "AIエージェント",
         "quest": "AIエージェントの「ツール利用」は何をする？",
         "correct": "外部システムやAPIを利用する",
@@ -131,6 +148,7 @@
         "explanation": "AIエージェント自ら他のアプリケーションなどを動作させます"
     },
     {
+        "categoryID": "aiagent",
         "category": "AIエージェント",
         "quest": "マルチエージェントシステムとは？",
         "correct": "複数のAIエージェントが協力してタスクを遂行する仕組み",
@@ -139,6 +157,7 @@
         "explanation": "複数のAIエージェントが、役割を分けて効率よく作業します"
     },
     {
+        "categoryID": "rag",
         "category": "RAG",
         "quest": "RAGの主な目的とは？",
         "correct": "外部文書やデータベースを検索し回答精度を高める",
@@ -147,6 +166,7 @@
         "explanation": "外部にある関連情報を参照しながら回答を作成します"
     },
     {
+        "categoryID": "rag",
         "category": "RAG",
         "quest": "RAGでも誤った回答が発生する理由として最も適切なものは？",
         "correct": "AIが検索した内容自体が誤っているから",
@@ -155,6 +175,7 @@
         "explanation": "検索された情報自体が不適切な場合、回答の品質も低下します"
     },
     {
+        "categoryID": "rag",
         "category": "RAG",
         "quest": "社内FAQを生成AIで作成したい場合、RAGが有効といわれる理由とは？",
         "correct": "社内文書を参照してAIが回答するから",
@@ -163,6 +184,7 @@
         "explanation": "RAGを使うと、社内マニュアルなどを参照して回答が作成されます"
     },
     {
+        "categoryID": "rag",
         "category": "RAG",
         "quest": "モデル自体に、特定の専門知識や回答スタイルを学習させる手法とは？",
         "correct": "ファインチューニング",
@@ -170,6 +192,7 @@
         "explanation": "ファインチューニングでは、再度学習させモデル自体を更新します"
     },
     {
+        "categoryID": "deepfake",
         "category": "ディープフェイク",
         "quest": "ディープフェイクとは何？",
         "correct": "AIが極めて精巧な偽コンテンツを作成する技術",
@@ -178,6 +201,7 @@
         "explanation": "ディープフェイクによるデマや詐欺が問題となっています"
     },
     {
+        "categoryID": "deepfake",
         "category": "ディープフェイク",
         "quest": "ディープフェイク・AI詐欺対策として最もふさわしくないものは？",
         "correct": "文章や音声はAIによる偽物の可能性があるので、写真を確認する",
@@ -186,6 +210,7 @@
         "explanation": "AIは精巧な偽画像、偽動画も作成できるようになっています"
     },
     {
+        "categoryID": "deepfake",
         "category": "ディープフェイク",
         "quest": "次のうち正しいのは？",
         "correct": "欧州議会では不適切なAIの使用禁止等を定めた法が施行されている",
@@ -195,6 +220,7 @@
         "explanation": "欧州議会の審議を経てAI法が施行されました"
     },
     {
+        "categoryID": "ailaw",
         "category": "AI新法",
         "quest": "2025年に公布された日本のAI新法の特徴として最も適切なものは？",
         "correct": "AIの研究開発・活用を推進しつつ、リスクにも対応するための基本法",
@@ -203,6 +229,7 @@
         "explanation": "研究開発、産業促進を進める一方、リスクを考慮し必要な措置を講じることを求めています"
     },
     {
+        "categoryID": "ailaw",
         "category": "AI新法",
         "quest": "以下のうち、AI新法でさだめられているものは？",
         "correct": "AI技術の教育や学習の振興、広報活動の充実化",
@@ -211,6 +238,7 @@
         "explanation": "AI新法では教育や研究開発の促進が記載されています"
     },
     {
+        "categoryID": "ailaw",
         "category": "AI新法",
         "quest": "AI政策を総合的に推進するため、この法律で設置される組織はどれ？",
         "correct": "人工知能戦略本部",
@@ -218,6 +246,7 @@
         "explanation": "内閣府に設置され、本部長は内閣総理大臣が充てられます"
     },
     {
+        "categoryID": "ailaw",
         "category": "AI新法",
         "quest": "AI新法で言及されているリスクとして適切ではないものは？",
         "correct": "シンギュラリティ",
@@ -225,6 +254,7 @@
         "explanation": "シンギュラリティとは人工知能が改善を繰り返し人間の知能を超えることです"
     },
     {
+        "categoryID": "privacy",
         "category": "個人情報",
         "quest": "個人情報保護法における「個人情報」に該当するものはどれ",
         "correct": "住所",
@@ -232,6 +262,7 @@
         "explanation": "個人情報は原則的に、生存する個人を特定できる情報をさします"
     },
     {
+        "categoryID": "privacy",
         "category": "個人情報",
         "quest": "次のうち、個人情報に該当しない可能性が高いものはどれ",
         "correct": "アンケートの自由記述回答に記入した文章",
@@ -239,6 +270,7 @@
         "explanation": "個人情報とは、単体で個人を識別できる情報や、他の情報と照合して容易に個人を識別できる情報です"
     },
     {
+        "categoryID": "privacy",
         "category": "個人情報",
         "quest": "顧客から個人情報を取得する際、適切ではないことは？",
         "correct": "できるだけ長期間、個人情報を保存しておく",
@@ -247,6 +279,7 @@
         "explanation": "事業者は個人情報の利用目的を特定し、その範囲内で利用することが求められています"
     },
     {
+        "categoryID": "privacy",
         "category": "個人情報",
         "quest": "匿名加工情報とは？",
         "correct": "個人を特定できないように加工し、復元できないようにした情報",
@@ -255,6 +288,7 @@
         "explanation": ""
     },
     {
+        "categoryID": "privacy",
         "category": "個人情報",
         "quest": "次のうち、要配慮個人情報に該当するものはどれ",
         "correct": "病歴",
@@ -262,6 +296,64 @@
         "explanation": "病歴や健康診断結果などは、特に慎重な取扱いが求められる要配慮個人情報に該当します"
     },
     {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "ある著作物の著作権はいつ発生する？",
+        "correct": "作品を創作した時",
+        "choices": ["作品を創作した時", "特許庁に申請した時", "申請手数料を納付した時", "申請が承認された時"],
+        "explanation": "著作権は、登録不要で創作と同時に発生します"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "次のうち、特許権で保護されるものは？",
+        "correct": "新しい発明",
+        "choices": ["新しい発明", "小説の内容", "会社のロゴ", "音楽作品"],
+        "explanation": "特許権の保護の対象は、技術的な発明です"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "商品のロゴや名前を保護する権利は？",
+        "correct": "商標権",
+        "choices": ["商標権", "意匠権", "著作権", "実用新案権"],
+        "explanation": "商標権は商品やサービス名、ロゴなどを保護します"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "製品のデザインを保護する権利は？",
+        "correct": "意匠権",
+        "choices": ["意匠権", "特許権", "著作権", "商標権"],
+        "explanation": "意匠権はデザインを保護します"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "他人の著作物を無断でネット上に公開すると、侵害の可能性が高い権利は？",
+        "correct": "著作権",
+        "choices": ["著作権", "商標権", "意匠権", "肖像権"],
+        "explanation": "著作物を許可なく公開すると、著作権侵害となる可能性があります"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "有名人の写真を無断で広告に使用した場合、主に問題となる可能性がある権利は？",
+        "correct": "パブリシティ権",
+        "choices": ["パブリシティ権", "特許権", "実用新案権", "意匠権"],
+        "explanation": "パブリシティ権とは、著名人が持つ経済的価値（顧客吸引力）を本人が排他的に利用できる権利です"
+    },
+    {
+        "categoryID": "rights",
+        "category": "いろいろな権利",
+        "quest": "肖像権とは？",
+        "correct": "自分の写真などが、許可なく他人に公表されない権利",
+        "choices": ["自分の写真などが、許可なく他人に公表されない権利", 
+        "自作のイラストを他人が勝手に使用できない権利", "自分の顔写真をAIに学習させない権利", "許可を得て著名人の写真や映像を使用する権利"],
+        "explanation": "有名人かどうかによらず、勝手に写真等を撮られたり公開されたりしないように主張できます"
+    },
+    {
+        "categoryID": "",
         "category": "sample",
         "quest": "",
         "correct": "",
